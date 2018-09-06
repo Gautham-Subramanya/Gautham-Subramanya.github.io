@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Booksonline.org</title>
+  <link rel="icon" type="image/ico" href="images/titlebar1.jpeg" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<script type="text/javascript" src="bundle.js"></script></head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">SignIn</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Name">Name:</label>
+              <input type="text" class="form-control" id="Name" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><p class="logo">Welcome to Booksonline.org</p> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#About">About Us</a>
+            <a class="dropdown-item" href="#About">Access</a>
+            <a class="dropdown-item" href="#About">Subscription Plans</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Genres
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#Auto">Autobiographies</a>
+            <a class="dropdown-item" href="#Bio">Biographies</a>
+            <a class="dropdown-item" href="#Fiction">Fiction</a>
+            <a class="dropdown-item" href="#History">History</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Sign In
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Sign In</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="carouselControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img height="625px" class="d-block w-100" src="images/herolib1.jpeg" alt="hero1">
+      </div>
+      <div class="carousel-item">
+        <img height="625px" class="d-block w-100" src="images/herolib7.jpeg" alt="hero2">
+      </div>
+      <div class="carousel-item">
+        <img height="625px" class="d-block w-100" src="images/herolib2.jpeg" alt="hero3">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <section id="skill" class="bg-light p-5">
+    <div class="container1">
+      <!--title-->
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h1 id="About" class="logo" style="font-size:30px">Booksonline.org</h1>
+          <div class="text underline"></div>
+          <p class="text-dark">Find your dream books here. You can access your books from wherever you are </p>
+
+        </div>
+      </div>
+      <!--Endof title-->
+      <div class="row">
+        <div class="col-sm-12 col-md-4 text-center my-3 alert alert-success">
+          <h1 class="m-1">About Us</h1>
+          <p>Hi, Hello!! We are a bunch of passionate youngsters who aim at providing you all the books that you need. This
+            website is one platform where you can find books of all genres.If you dont find any book that you need, please
+            put up in the comments section. We will try our best to provide it. This is a part of our Go-Green initiative.
+            Join us in this initiative. Happy Reading!!</p>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center my-3 alert alert-warning">
+          <h1 class="m-1">How to access</h1>
+          <p>You can subscribe to any of the plans mentioned and you can get access to your books from anywhere anytime.
+            You can get access to many books based on the plan you subscribe to and you can login to view your books. </p>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center my-3 alert alert-info">
+          <h1 class="m-1">Subscription Plans</h1>
+          <p>There are different plans and you can choose any plan based on your needs and you can switch your plans anytime.There
+            are three plans. Basic plan is valid upto 30 days and you can access preview books.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Preview books section-->
+  <section id="preview" class="bg-secondary p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h1 class="text-light heading">Preview Books</h1>
+          <p class="text-success">You can preview these books before subscribing</p>
+          <div class="text underline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/image1.jpeg" style="height:500px" class="card-img-top" alt="Cogheart">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Cogheart by Peter Bunzl</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/image3.jpeg" style="height:500px" class="card-img-top" alt="Hush">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Hush by Rubin Naiman</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/harry.jpeg" style="height:500px" class="card-img-top" alt="Harry">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Harry Potter by Rowling</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End-->
+
+  <!--Autobiographies-->
+  <section id="Autobiographies" class="bg-light p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+           <h3 id="Auto" class="text-dark heading">Autobiographies</h3>
+          <div class="text underline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/auto1.jpeg" style="height:500px" class="card-img-top" alt="My Experiments with Truth">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Experiments with Truth</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/auto2.jpeg" style="height:500px" class="card-img-top" alt="Wings of Fire">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Wings of Fire</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/auto4.jpeg" style="height:500px" class="card-img-top" alt="Playing it my way">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Playing it my Way</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Biographies-->
+  <section id="Biographies" class="bg-success p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h3 id="Bio" class="text-light heading">Biographies</h3>
+          <div class="text underline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/bio1.jpeg" style="height:500px" class="card-img-top" alt="Rahul Dravid">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Biography of Rahul Dravid</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/bio2.jpeg" style="height:500px" class="card-img-top" alt="Mother Teresa">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Biography of Mother Teresa</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/bio3.jpeg" style="height:500px" class="card-img-top" alt="Churchill">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Biography of Churchill</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Fiction-->
+  <section id="Fiction" class="bg-light p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h3 class="text-danger heading">Fiction</h3>
+          <div class="text underline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/fiction1.jpeg" style="height:500px" class="card-img-top" alt="Lord of Rings">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">The Lord of the Rings</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/fiction2.jpeg" style="height:500px" class="card-img-top" alt="Harry Potter">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Harry Potter</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/fiction3.jpeg" style="height:500px" class="card-img-top" alt="2 States">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">2 States</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--History-->
+  <section id="History" class="bg-danger p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h3 id="History" class="text-light heading">History</h3>
+          <div class="text underline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/his1.jpeg" style="height:500px" class="card-img-top" alt="Ancient China">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">Ancient China</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/his2.jpeg" style="height:500px" class="card-img-top" alt="The Great Mughals">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">The Great Mughals</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3">
+          <div class="card">
+            <img src="images/his3.jpeg" style="height:500px" class="card-img-top" alt="Time before History">
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="names">The Time Before History</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--reviews-->
+  <section id="testimonials" class="p-5 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h1 class="text-light">Here is what our subscribers say</h1>
+          <div class="text underline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+          <div id="carouseltheme" class="carousel slide" data-ride="carousel">
+            <!--slideshow-->
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <img src="images/andy.jpeg" class="img-fluid rounded-circle m-3" height="100px" width="150px" alt="Murray">
+                <h1 class="text-danger">Andy Murray</h1>
+                <blockquote class="blockquote text-white">
+                  <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+                    An amazing website. I truely enjoy this. I can access my books from any part of the world. Great work guys.
+                    <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+                  </p>
+                  <footer class="blockquote-footer">Andy, UK</footer>
+                </blockquote>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="images/federer.jpeg" class="img-fluid rounded-circle m-3" height="100px" width="150px" alt="Federer">
+                <h1 class="text-danger">Roger Federer</h1>
+                <blockquote class="blockquote text-white">
+                  <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+                    A Great platform to find books. Subscribing to Gold plan is worth it. You can find almost every book here, even the rarest of all
+                    <i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+                  </p>
+                  <footer class="blockquote-footer">Federer, Switzerland</footer>
+                </blockquote>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouseltheme" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouseltheme" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="p-5">
+    <div class="container2">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h1>Price for each plan</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 my-4">
+          <div class="list-group text-center">
+            <div class="list-group-item text-dark" style="background-color:#72788D">
+              <h1 class="p-2">Basic</h1>
+            </div>
+            <div class="list-group-item text-uppercase font-weight-bold" style="background-color:#E3D7FF">
+              <h1>Free</h1>
+            </div>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Preview books</a>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">30 days validity</a>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Can access
+              only through a specific device
+            </a>
+            <div class="list-group-item" style="background-color:#636B61">
+              <button class="btn btn-secondary btn-lg btn-block text-capitalize">Sign-Up</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 my-4">
+          <div class="list-group text-center">
+            <div class="list-group-item text-dark" style="background-color:#72788D">
+              <h1 class="p-2">Silver</h1>
+            </div>
+            <div class="list-group-item text-uppercase font-weight-bold" style="background-color:#E3D7FF">
+              <h1>$15</h1>
+            </div>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Access to 100
+              books per month</a>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Lifetime validity</a>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Can access
+              from anywhere</a>
+            <div class="list-group-item" style="background-color:#636B61">
+              <button class="btn btn-secondary btn-lg btn-block text-capitalize">Sign-Up</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 my-4">
+          <div class="list-group text-center">
+            <div class="list-group-item text-dark" style="background-color:#72788D">
+              <h1 class="p-2">Gold</h1>
+            </div>
+            <div class="list-group-item text-uppercase font-weight-bold" style="background-color:#E3D7FF">
+              <h1>$50</h1>
+            </div>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Access to Unlimited
+              books
+            </a>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Lifetime validity</a>
+            <a href="#" class="list-group-item list-group-action text-light" style="background-color:#636B61">Can access
+              from anywhere</a>
+            <div class="list-group-item" style="background-color:#636B61">
+              <button class="btn btn-secondary btn-lg btn-block text-capitalize">Sign-Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="p-5 ">
+    <div class="container3">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h1 class="text-light">Contact Us</h1>
+          <div class="text-underline my-2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-body">
+              <div class="card-title text-center text-white">
+                <h2>New to
+                  <h1 class="logo">Booksonline.org?</h1>
+                </h2>
+                <p>New user signup</p>
+                <hr>
+              </div>
+              <form>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="Password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="Re-enter Password" class="form-control" id="Re-enter password" placeholder="Re-type Password">
+                </div>
+                <button type="submit" class="btn btn-outline-dark btn-block">SIGN UP</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-body">
+              <div class="card-title text-center text-white">
+                <h2>Any queries? </h2>
+                <p>Feel free to drop it in the comments sections<br>Help us improve</p>
+                <hr>
+              </div>
+              <form>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="Phone" class="form-control" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="Password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="Comments" class="form-control" id="comments" placeholder="Comments">
+                </div class="form-group mt-3">
+                <button type="submit" class="btn btn-outline-dark btn-block">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark">
+    <div class="text-center center-block">
+      <p class="footer text-light logo" style="font-size:20px">Booksonline.org </p>
+      <br />
+      <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social text-light"></i></a>
+      <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social text-light"></i></a>
+      <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social text-light"></i></a>
+      <a href="mailto:gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social text-light"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
